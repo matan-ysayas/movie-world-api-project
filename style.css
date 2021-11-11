@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+#pageContainer {
+  display: grid;
+  grid-template-rows: 20vh auto 10vh;
+}
+
+#headerLogo {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -100;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style-type: none;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Tourney', cursive;
+  font-size: large;
+  transition: 1.5s;
+  border-radius: 20%;
+}
+
+nav ul li:hover {
+  border-bottom: solid white;
+  color: bisque;
+  font-size: x-large;
+  border-top: solid white;
+  background-color: rgba(128, 128, 128, 0.253);
+}
+
+ul li img {
+  width: 150px;
+  height: 80px;
+}
+
+#socialNetworksBox {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  border-top: ridge rgba(255, 255, 255, 0.445);
+  color: antiquewhite;
+  margin-top: 3vh;
+  text-decoration: none;
+}
+#socialNetworksBox a{
+  text-decoration: none;
+  list-style-type: none;
+  color: beige;
+}
+
+#homePageTitle {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  font-family: "Tourney", cursive;
+  font-size: xx-large;
+}
+#homePageTitle img {
+  width: 100px;
+  width: 100px;
+}
+#homePageTitle h1 {
+  color: aliceblue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+  display: block;
+}
+.slideshow-container img {
+  border-radius: 10%;
+}
+
+.mySlides {
+  display: none;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 2;
+  }
+}

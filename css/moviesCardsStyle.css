@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+#pageContainer {
+  display: grid;
+  grid-template-rows: 20vh auto 10vh;
+}
+
+#headerLogo {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style-type: none;
+  align-items: center;
+}
+a:link,
+a:visited {
+  color: white;
+  text-decoration-line: none;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 22px;
+  transition: 1.5s;
+  border-radius: 20%;
+  font-family: "Tourney", cursive;
+}
+
+nav ul li:hover {
+  border-bottom: solid white;
+  color: bisque;
+  font-size: 25px;
+  border-top: solid white;
+  background-color: rgba(128, 128, 128, 0.253);
+}
+
+ul li img {
+  width: 150px;
+  height: 80px;
+}
+
+#cardsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -100;
+}
+
+.card {
+  width: 28%;
+  height: 50%;
+  border-radius: 10%;
+  text-align: center;
+  margin-bottom: 7vh;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-family: cursive;
+  color: blanchedalmond;
+  background-color: rgba(0, 0, 0, 0.486);
+  font-family: "Courgette", cursive;
+}
+.card button {
+  background-color: black;
+  color: bisque;
+  width: 14%;
+  height: 14%;
+  border: solid white;
+  margin-top: 2vh;
+  border-radius: 10%;
+  font-family: "Courgette", cursive;
+}
+
+.card button:hover {
+  background-color: bisque;
+  color: black;
+  transition: 1.5s;
+}
+
+span {
+  color: sandybrown;
+  font-weight: 200;
+  font-size: large;
+}
+.card p {
+  transition: 1s;
+}
+
+.card p:hover {
+  font-size: x-large;
+}
+
+.card img {
+  width: 50%;
+  height: 200px;
+  margin: auto;
+  border-radius: 10%;
+}
+
+#socialNetworksBox {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  border-top: ridge rgba(255, 255, 255, 0.445);
+  color: antiquewhite;
+  margin-top: 3vh;
+}
+#cardsTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+#cardsTitle h1 {
+  font-size: xxx-large;
+  margin-bottom: 3vh;
+  color: blanchedalmond;
+  font-family: "Tourney", cursive;
+}
+#searchInput {
+  border: solid black;
+  background-color: rgba(0, 0, 0, 0.582);
+  color: blanchedalmond;
+}
+#searcContiner button {
+  background-color: black;
+  color: bisque;
+}

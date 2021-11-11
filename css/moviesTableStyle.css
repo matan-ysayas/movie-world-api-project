@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  
+   
+}
+
+
+#background{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -100;
+  
+    
+    
+}
+
+
+#pageContainer {
+    display: grid;
+    grid-template-rows: 20vh auto 10vh;
+  }
+  
+  #headerLogo {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style-type: none;
+    align-items: center;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Tourney', cursive;
+    font-size: large;
+    transition: 1.5s;
+    border-radius: 20%;
+  }
+  
+  nav ul li:hover {
+    border-bottom: solid white;
+    color: bisque;
+    font-size: x-large;
+    border-top: solid white;
+    background-color: rgba(128, 128, 128, 0.253);
+  }
+
+  #socialNetworksBox {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    border-top: ridge rgba(255, 255, 255, 0.445);
+    color: antiquewhite;
+    margin-top: 3vh;
+  }
+  
+
+#pageTit{
+  display: flex;
+justify-content: center;
+font-family: "Tourney", cursive;
+font-size: xx-large;
+color: blanchedalmond;
+
+}
+
+#tableContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#moviesTable{
+  margin-top: 5vh;
+  font-family: 'Courgette', cursive;
+}
+
+table, th, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  th, td {
+    background-color: #96d4d449;
+    max-width: 500px;
+    overflow-wrap: break-word;
+  }
+th{
+  font-size: x-large;
+ color: burlywood;
+  background-color: rgba(12, 12, 12, 0.342);
+}
